@@ -1,0 +1,292 @@
+@charset "UTF-8";
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#wrap {
+    width: 100%;
+    min-width: 1284px;
+}
+
+#wrap header {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 -7px 20px rgba(0, 0, 0, 0.3);
+}
+
+#wrap header .headerInner {
+    width: 1284px;
+    margin: 0 auto;
+    font-family: 'Baloo 2';
+    font-size: 25px;
+}
+
+/* 로고 */
+#wrap header .headerInner h1.logo {
+    width: 400px;
+    float: left;
+}
+
+#wrap header .headerInner h1.logo a img {
+    margin-top: 40px;
+}
+
+#wrap header .headerInner h1.logo a:hover {
+    opacity: 0.7;
+}
+
+/* 메뉴 */
+#wrap header .headerInner nav.menu {
+    width: 884px;
+    float: left;
+}
+
+#wrap header .headerInner nav.menu ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#wrap header .headerInner nav.menu ul a:hover {
+    color: #4e2bf4;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+/* 메인슬라이드 */
+#wrap #slide {
+    width: 100%;
+    height: 620px;
+    background-color: #a992ff;
+}
+
+#wrap #slide .slideInner {
+    width: 1284px;
+    height: 620px;
+    margin: 0 auto;
+    background: url("../images/slide.png")no-repeat center 100px;
+}
+
+/* 컨텐츠 5종 */
+#wrap #contents {
+    width: 100%;
+}
+
+#wrap #contents #a1 {
+    width: 100%;
+    height: 1000px;
+    background-color: #f3fbff;
+}
+
+#wrap #contents #a1 .a1Inner {
+    width: 1284px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url("../images/01.png")no-repeat center 100px;
+}
+
+#wrap #contents #a2 .a2Inner {
+    width: 1284px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url("../images/02.png")no-repeat center 100px;
+}
+
+#wrap #contents #a3 .a3Inner {
+    width: 1284px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url("../images/03.png")no-repeat center 100px;
+}
+
+#wrap #contents #a4 .a4Inner {
+    width: 1284px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url("../images/04.png")no-repeat center 100px;
+}
+
+#wrap #contents #a5 .a5Inner {
+    width: 1284px;
+    height: 1000px;
+    margin: 0 auto;
+    background: url("../images/05.png")no-repeat center 50px;
+}
+
+#wrap #contents #a2 {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+
+#wrap #contents #a3 {
+    width: 100%;
+    height: 1000px;
+    background-color: #603de3;
+}
+
+#wrap #contents #a4 {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+
+#wrap #contents #a5 {
+    width: 100%;
+    height: 1000px;
+    background-color: #ff9494;
+}
+
+
+/* 고정퀵메뉴 */
+#quick {
+    width: 60px;
+    height: 300px;
+    background: linear-gradient(45deg, #4e2bf4, #8367fa);
+    position: fixed;
+    right: 0;
+    top: 170px;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#wrap footer {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
+#wrap footer .footerInner {
+    width: 1284px;
+    height: 200px;
+    margin: 0 auto;
+    background: url("../images/footer.png")no-repeat center center;
+
+}
+
+#quick ul {
+    padding-top: 20px;
+}
+
+#quick ul li {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid  #fff; */
+}
+
+#quick ul li span.box {
+    width: 2px;
+    height: 2px;
+    transition: .3s;
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#quick ul li:hover span.box {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* 아이콘 */
+#quick ul li a {
+    background: url("../images/quick.svg")no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 125px;
+    transition: .3s;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+/* 아이콘 위치값 */
+#quick ul li a.hs {
+    background-position: 0 0;
+}
+
+#quick ul li a.hl {
+    background-position: 0 -27px;
+}
+
+#quick ul li a.hh {
+    background-position: 0 -52px;
+}
+
+#quick ul li a.he {
+    background-position: 0 -75px;
+}
+
+#quick ul li a.hb {
+    background-position: 0 -100px;
+}
+
+/* 아이콘 후버 */
+
+#quick ul li:hover a {
+    background: url("../images/quickHover.svg")no-repeat;
+
+    background-size: 25px 125px;
+}
+
+/* 아이콘 위치값 */
+#quick ul li:hover a.hs {
+    background-position: 0 0;
+}
+
+#quick ul li:hover a.hl {
+    background-position: 0 -27px;
+}
+
+#quick ul li:hover a.hh {
+    background-position: 0 -52px;
+}
+
+#quick ul li:hover a.he {
+    background-position: 0 -75px;
+}
+
+#quick ul li:hover a.hb {
+    background-position: 0 -100px;
+
+}
+
+/* 하단화살표 */
+.btn_top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}

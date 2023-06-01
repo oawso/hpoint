@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버버튼</title>
+    <style>
+        /* 552 x 620 / hover - 582 x 620 / 가로세로26px */
+        * {margin: 0; padding: 0;}
+        ul,li{margin: 0; padding: 0;list-style:none;}
+        ul.naverBtn {margin: 30px;  width: 120px; display: flex; justify-content: space-between;}
+        ul.naverBtn li {margin: 50px;}
+        ul.naverBtn li a.btn {width: 26px; height: 26px; display: block;   background: url("./images/sp_main_947f65.png")no-repeat -552px -620px; /* x, y*/
+        }
+        ul.naverBtn li a.btn:hover {background-position: -582px -620px;}
+    </style>
+</head>
+<body>
+    <!-- ul.naverBtn>li*3>a.btn -->
+    <ul class="naverBtn">
+        <li><a href="#" class="btn"></a></li>
+        <li><a href="#" class="btn"></a></li>
+        <li><a href="#" class="btn"></a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg size</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 800px;
+            height: 600px;
+            margin: 50px;
+            border: 1px solid #000;
+            background: url("./images/mainN.jpg")no-repeat center center;
+        }
+        div:nth-child(1){background-size: contain;} /* 이미지 실제 사이즈 */
+        div:nth-child(2){background-size: cover;} /* 꽉 채움 */
+        div:nth-child(3){background-size: 600px 400px;} /* 이미지 실제 사이즈 */
+        div:nth-child(4){background-size: 30%;} /* 이미지 실제 사이즈 */
+        div:nth-child(5){background-size: 100% 50%;} /* 이미지 실제 사이즈 */   
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
