@@ -24,7 +24,19 @@ $(function () {
         }
     });
     // 각 메뉴 클릭시 애니메이션으로 해당 콘텐츠에 위치시킴
-    // .eq() : 지정한 변수만 선택
+    var menu = $(".menu>ul>li");
+    var con = $("#contents>div");
+    // #contents>div = #a1~#a5
+    menu.click(function(){
+        var tg = $(this); // 클릭 이벤트가 일어난 li (menu)
+        var i = tg.index(); // 클릭이 일어난 메뉴의 순서 값
+        var section = con.eq(i); // .eq() : 지정한 변수만 선택
+        var toP = section.offset().top; //offset : 전체 문서 기준으로 선택한 요소의 가로, 세로 떨어진 위치의 좌표값 변경 시 사용
+        $("html,body").animate({
+            scrollTop:toP
+        })
+    })
+    
 
 
 
